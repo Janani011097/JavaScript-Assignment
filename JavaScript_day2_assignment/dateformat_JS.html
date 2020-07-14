@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <h1>Date Formats</h1>
+    </head>
+    <body>
+       <script>
+           const today = new Date();
+            var date = today.getDate();
+var month = today.getMonth() +1;
+var year = today.getFullYear();
+if(date<10) 
+{
+    date='0'+date;
+} 
+if(month<10){
+    month ='0'+ month;
+}
+document.write("Format 1 : mm-dd-yyyy or mm/dd/yyyy");
+document.write("<br />");
+curdate = month+'-'+date+'-'+year;
+document.write(curdate);
+document.write("<br />");
+curdate = month+'/'+date+'/'+year;
+document.write(curdate);
+document.write("<br />");
+document.write("Format 2 : dd-mm-yyyy or dd/mm/yyyy");
+document.write("<br />");
+curdate = date+'-'+month+'-'+year;
+document.write(curdate);
+document.write("<br />");
+curdate = date+'/'+month+'/'+year;
+document.write(curdate);
+       </script>
+    </body>
+</html>
