@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h2>VAR LET CONST DATA</h2>
+</head>
+<body>
+    <h4>VAR</h4>
+    <p>Var is globally scoped,var variables can be re-declared and updated</p>
+    <script>
+        var fruit = "Apple";
+		var discount_value = "15%";
+        var price = 100;
+        var discount = price * 20/100;
+		var original_price = price - discount;
+		
+		document.write("Fruit : ",fruit);
+		document.write("<br />");
+        document.write("Discount_value : ",discount_value);
+		document.write("<br />");
+		document.write("Original_price : ",original_price);
+        document.write("<br />");
+    </script> 
+	<h4>LET</h4>
+    <p>let is now preferred for variable declaration and it is block scoped,var and let are same when declared inside a method</p>
+    <script>
+        var a = 5;
+        let b = 5; 
+        document.write("the value of a using var is: ", a); 
+        document.write("<br />");
+        document.write("the value of b using let is: ", b); 
+    </script>
+	<h4>CONST</h4>
+    <p>Const is the value which cannot be changed or overridden</p>
+    <script>
+        const basic_salary = 10000;
+        document.write("The basic salary : ", basic_salary);
+        // const basic_salary = "20000";
+    </script>
+       <p>if we declare basic_salary with const again,it will shows the error like this...Uncaught SyntaxError: Identifier 'basic_salary' has already been declared<p></p>
+</body>
+</html>

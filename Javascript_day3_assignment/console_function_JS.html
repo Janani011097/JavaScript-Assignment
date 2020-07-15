@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment</title>
+    <h2>Various methods in Console Function</h2>
+</head>
+<body>
+    <script>
+         // This console log is used to print the value in DOM
+        console.log("This is to check the log");
+        
+		// This console table is used to display the js object in table structure
+		var a = {name:"jeni", age:"23", city:"Chennai"}
+        var b = {name:"raji", age:"23", city:"Madurai"}
+        var c = {name:"lava", age:"23", city:"Salem"}
+        console.table({a,b,c});
+		
+		// This console warn is used to display warning message in the console 
+        console.warn("This is a warning");
+        
+		// This console error is used to display error message in the console
+        console.error("This is a error log")
+        
+		// This console time is used to start timer to run all the JS codes
+        console.time('Time Taken');
+        
+		// This console time is used to end timer to run all the JS codes
+		for (i=0; i<10000;i++)
+		{
+           
+        }
+        console.timeEnd('Time Taken');
+		
+		// This console count is used to count the number till the condition satisfied
+        for (i=0; i<10;i++)
+		{
+           console.count("Hiii");
+        }
+		console.log("Hello world!");
+		
+		// This is used to start the display message in group
+        console.group();
+        
+		// This is used to end the display message in group
+        console.log("This is grouping");
+        console.groupEnd();
+        console.log("Have a nice day!!!");
+    </script>
+</body>
+</html>
