@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JAVASCRIPT ASSIGNMENT</title>
+    <h2>USER INPUT AND GIVE OUTPUT</h2>
+</head>
+<body>
+    <script>
+        function validate(age){
+            var ans="Not Eligible";
+            if(age> 18){
+                ans="Eligible";
+                console.log("Eligible to Vote");
+				document.write("Eligible to Vote")
+            }
+            else {
+                console.log("Not Eligible to Vote");
+				document.write("Not Eligible to Vote");
+                return(ans);
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var age=parseInt(prompt("Enter age"));
+        var status=validate(age);
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JAVASCRIPT ASSIGNMENT</title>
+    <h2>STRING METHODS</h2>
+</head>
+<body>
+    <p>concat method is used to concat two strings</p>
+    <script>
+       var text1 ="Hello everyone.... ";
+       text2 = text1.concat("Have a nice day!!!");
+       document.write(text2);
+    </script>
+    <p>Replace method in string is used to replace  the given string with another string.Here good is replaced by best</p>
+    <script>
+        var test1 ="She is good";
+        document.write(test1);
+        document.write("<br />");
+        text2 = test1.replace("good","best");
+        document.write(text2);
+     </script>
+     <p>Substring method is used to extract characters from a string.Here I extracted from 7th index to 11th index</p>
+     <script>
+        var text1 ="She is Good";
+        document.write(text1);
+        document.write("<br />");
+        text2 = text1.substring(7,11);
+        document.write(text2);
+     </script>
+     <p>Trim method is used to remove unwanted white spaces from a string</p>
+     <script>
+        var text1 ="     She   is a good    and talented ";
+        document.write(text1.trim());
+     </script>
+     <p>Convert the string to uppercase letters</p>
+     <script>
+        var text1 ="she is good";
+        document.write(text1);
+        document.write("<br />");
+        text2 = text1.toLocaleUpperCase();
+        document.write(text2);
+     </script>
+     <p>Convert the string to lowercase letters</p>
+     <script>
+        var text1 ="SHE IS GOOD";
+        document.write(text1);
+        document.write("<br />");
+        text2 = text1.toLocaleLowerCase();
+        document.write(text2);
+     </script>
+     <h2>ARRAY METHODS</h2>
+     <p>splice method in array is used to remove elements without leaving "holes" in the array.Here I removed first element in array </p>
+     <script>
+          document.write("<br />");
+         var arr =['rio','tokyo','nairobi','helsinki','berlin','professor','oslo'];
+         document.write(arr);
+         spl = arr.splice(0,1);
+         document.write("<br />");
+         document.write(arr);
+     </script>     
+</body>
+</html>
